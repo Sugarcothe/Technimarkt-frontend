@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap');
+
+/* .App {
+  background-image: url(./LandingPage/images/Korean.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height:100vh;
+  width: 100%;
+} */
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(100, 54, 73, 0.2);
+  opacity: 1;
+} */
+
+
+
+button .btn:hover {
+  letter-spacing: 6px;
+}
+
+.btn-secondary {
+  color: rgb(208,96,94);
+}
+.btn-primary {
+  color: rgb(100, 54, 73)
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

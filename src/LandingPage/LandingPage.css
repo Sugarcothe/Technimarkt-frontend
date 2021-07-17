@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap');
+
+.showcase {
+  padding-top: 10rem;
+}
+
+.landingPage {
+  background-image: url(./images/Korean.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height:100vh;
+  width: 100%;
+}
+
+.showcase h1 {
+  color: rgb(228,103,87);
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.showcase h3 {
+  color: rgb(255, 242, 242);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.showcase p {
+  max-width: 500px;
+}
+
+.landingPageSmallScreenButton {
+  display: none;
+}
+
+/* Phone  */
+
+@media screen and (max-width: 768px) {
+  
+.showcase {
+  padding-top: 5rem;
+}
+
+.landingPage {
+  background-image: url(./roro.jpg);
+  background-color: rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height:100vh;
+  width: 100%;
+}
+
+  .showcase h1 {
+    color: rgb(255, 242, 242);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-justify: auto;
+  }
+  .showcase h3 {
+    color: rgb(255, 242, 242);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-justify: auto;
+  }
+  
+  .showcase p {
+    max-width: 500px;
+  }
+
+  .para-text {
+    text-justify: newspaper;
+  }
+  .btn {
+    display: none;
+  }
+   
+  .landingPageButton {
+    display: none;
+  }
+  .landingPageSmallScreenButton {
+    display: inline;
+  }
+  
+
+}

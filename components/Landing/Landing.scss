@@ -1,0 +1,133 @@
+@import '../../global.scss';
+
+.landing {
+  background-color: white;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 550px;
+      height: 550px;
+      background-color: $main-color;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+      z-index: 0;
+
+      @include mobile{
+        align-items: flex-start;
+        width: 262px;
+        height: 262px;
+      }
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        
+        @include mobile{
+          height: 53%;
+        }
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+  
+    .wrapper{
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include mobile{
+        padding-left: 0;
+        align-items: center;
+      }
+
+      h1{
+        font-size: 70px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(6, 62, 105);
+        margin: 10px 0;
+        font-weight: 800;
+
+        @include mobile{
+          font-size: 40px;
+          font-weight: 500;
+        }
+      }
+      h2{
+        font-size: 35px;
+        @include mobile{
+          font-size: 20px;
+        }
+      }
+      h3{
+        font-size: 30px;
+
+        @include mobile{
+          font-size: 15px;
+        }
+
+        span{
+          font-size: inherit;
+          color: $main-color;
+        }
+        .ityped-cursor{
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+          50%{
+            opacity: 1;
+          }
+          100%{
+            opacity: 0;
+          }
+          
+        }
+      }
+
+    }
+    a{
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+
+      // @include mobile {
+      //   display: none;
+      // }
+
+      .fas{
+        width: 30px;
+        color: $secondary-color;
+        animation: arrowBlink 1s infinite;
+
+        @include mobile {
+          height: auto;
+        }
+      }
+
+      @keyframes arrowBlink {
+        100%{
+          opacity: 0;
+        }
+      }
+
+
+    }
+  }
+}

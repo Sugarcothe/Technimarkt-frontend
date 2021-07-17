@@ -1,0 +1,187 @@
+@import '../../global.scss';
+
+.projects {
+  background-color: $secondary-color;
+  display: flex;
+  align-items: center;
+  justify-content: content;
+  position: relative; 
+
+
+  // @include mobile{
+  //   display: none;
+  // }
+
+  .fas {
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+    color: black;
+
+    @include mobile{
+      display: none;
+    }
+
+
+    &.left{
+      left: 100px;
+    }
+    &.right{
+      right: 100px;
+    }
+    
+
+  }
+
+  .slider{
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+
+    @include mobile{
+      height: 120vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container {
+      height: 100%;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item{
+        width: 720px;
+        height:100%;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile{
+          width: 70%;
+          height: 100px;
+          margin: 1px 0;
+        }
+
+        .left{
+          flex: 5;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 4px 6px;
+          
+
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            
+            @include mobile{
+              width: 50vw;
+              height: 100%;
+            }
+
+            .imgContainer{
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: $main-color;
+              display: flex;
+              align-items: center;
+              align-content: center;
+
+              
+              @include mobile{
+                width: 20px;
+                height: 20px;
+              }
+
+              img{
+                width: 25px;
+
+                
+              @include mobile{
+                width: 15px;
+                
+              }
+              }
+            }
+          }
+
+          h4{
+            font-size: 20px;
+
+            @include mobile{
+              font-size: 10px;
+            }
+          }
+
+          p{
+            font-size: 13px;
+
+            @include mobile{
+              display: none;
+            }
+  
+          }
+          .span{
+            @include mobile{
+            font-size: 5px;
+            }
+          }
+
+         
+          // .lin {
+          //   margin-left: 10px;
+          // }
+
+          a{
+            text-decoration: none;
+            text-decoration: none;
+            color: black;
+
+            .links {
+              display: flex;
+              flex-direction: row;
+              
+            }
+          }
+
+          
+          
+        }
+        .right{
+          flex: 8;
+          height: 100%;
+          background-color: $main-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+            img{
+              width: auto;
+              height: 350px;
+              // transform: rotate(-10deg);
+
+              @include mobile {
+                width: auto;
+                height: 130px;
+              }
+            }
+
+        }
+      }
+    }
+  }
+
+  
+}

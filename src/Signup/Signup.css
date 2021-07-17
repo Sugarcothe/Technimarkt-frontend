@@ -1,0 +1,16 @@
+.SignupPage {
+  background-color: white;
+  height: 100%;
+  width: auto;
+}
+
+small a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .SignupImage {
+    display: none;
+  }
+}

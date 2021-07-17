@@ -1,0 +1,36 @@
+@import '../../global.scss';
+
+.about {
+  background-color: $secondary-color;
+  padding: 2rem;
+
+  img{
+    background-color: $main-color;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .aboutP{
+    max-width: 500px;
+  }
+  
+  .second{
+    color: $main-color;
+    font-size: 1rem;
+  }
+
+  .para{
+    max-width: 700px;
+    text-align: justify;
+    text-justify: center;
+  }
+}
+
+
