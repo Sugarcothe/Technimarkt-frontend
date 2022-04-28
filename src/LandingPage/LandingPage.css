@@ -5,7 +5,7 @@
 }
 
 .landingPage {
-  background-image: url(./images/Korean.jpg);
+  background-image: url(./images/r1.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -46,7 +46,7 @@
 }
 
 .landingPage {
-  background-image: url(./roro.jpg);
+  background-image: url(./images/roro.jpg);
   background-color: rgba(0, 0, 0, 0.1);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -54,7 +54,6 @@
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  height:100vh;
   width: 100%;
 }
 
